@@ -1,0 +1,653 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+
+    <title>My Swift | Amber IT </title>
+
+
+    
+
+
+        <link rel="stylesheet" href="/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/fonts/icomoon/icomoon.css" />
+        <link rel="stylesheet" href="/css/main.css" />
+
+
+
+        <link rel="shortcut icon" href="/img/favicon.ico" />
+
+
+
+
+
+        <script src="/js/jquery.js"></script>
+        <script src="/js/tether.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/vendor/unifyMenu/unifyMenu.js"></script>
+        <script src="/vendor/onoffcanvas/onoffcanvas.js"></script>
+        <script src="/js/moment.js"></script>
+
+        <script src="/vendor/slimscroll/slimscroll.min.js"></script>
+        <script src="/vendor/slimscroll/custom-scrollbar.js"></script>
+
+        <script src="/js/common.js"></script>
+
+
+
+        <style>
+            .form-group {
+                margin-bottom: .2rem !important;
+            }
+        </style>
+
+
+
+
+    
+
+</head>
+<body>
+    <form method="post" action="./CustomerDocument.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="ctl00" idd="frmMain" enctype="multipart/form-data">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="f+Z0DwdoRJTX4wMANICsyYHKDiHwmVCtOndSeUCeJu8Bkp0zz+gesFv06aNAugu3BTDFQilWo68L6PrC+6osVHkRPHNyHKh2zLhh7PiEX4/hqXhyFJkNmE+46eqpSkFm7WlCGDPG/rVD5nARJqFtwje5A+qkbHV4AInFREuNH1xXUHlEIygAWmIL5M6b6vFGGjDwhAcC8XHL6JwvN5+hZhSdxLrgfR1oF8enqCKnmQE21cK7p5s5VcUUT01jJauzqeJtdHBwZXl9P0j1uoOOlTGcXOeDdtqgTu9g0MyFd/B1TbbrGrl/L5vfVHCBUqn6ZH2V3u0Gg2R9ANUl9kIYYVleSbjdi19blqwVfEbJFL73I7xJUZESyLsIFKjkWhORRq0WepFfOVjSw2hx9kqwVOyNc/OeWs8PQ0QUPHnkzkRssLSQdJLRBUlAXicvmCTrxihbp8mOD6gbmxA+6jNCZWQSyteeEzP9U7JzDDgTsHLNhJBgLOhTPoFpqwGkjcLj9Ttmk0WiH7+7j2t+9sTmSv4wX1a7okF3UFZm2zhMMw6XCO48NJtlNesF0tr+ivYIJBQ01ujf6WJbnXbVb/sYYmvlXza658vDOiOySc7kv9SuSv0hjlwJOLG6KRon7U+iZHPDhWLD1+JfP1XE3FcRDxdS8ykAADM1FjvzsJ6go1STXBCjaYdRE9b8NE0m5tgP/ad3KO7eKo6JqhlPls9BlsPIuodulcCYpR8woxwLXjFz3xQ9o26Sry3JFUmNAzdEpRdxXLK7QIyl3+ZmRdSPFragPLfQ5iGImDiqeY755Uyd8TsemRCJsYARkzKWAtXQzlYGbCDLl/860FiyJWpbDE6bxWcURgnLFKUJ0hFt2IhULikGHdHVLfS4j1LigeiIf0wTgBUrN2UdcWSVjDSPS4tobK/1mdgxyX3bZudTrslYRMPS5RUg+0TY02DUXEZ9QmotnrYXoHfAf/Lu3+maoQbxPskqlKyn2HNV9iB9XR+Hx7oWHbTXja347DHTbRd/LvpOsTgcTm0Z+doxTDkieD+U2wNoD2t/g0xnQHIl/fdMXZjoh8abpSy5anhxbqEI96hy6bUbvEsnf9urH92NKnzx0MO3OH5woFhaNtEZoJPd2fFh8/MIdiaiF3P+9EMzLgoeJ0hj+nTYfzcEIa4fyhPH94g8iq8Exce4l50702ose5SM+MLix/pyDqrPXYgdOKGXpa2PTPKJ2aZFvqwdF0wBTSGoeNgCpNnz2yr3ns1a8S+J08Dl8lqfRI0KXzPWU+0eNFQ5VDglqkZ8giVkPSpTf7riUOB5eh5KvDB8iukMHcplLBjMCeu4dId5E8pElkbQ0rK2iZAHPuMZuoM/qG9vss1lQoSxQMgzDXgsuN6H6H0EDTj2wB93WSS/fCPLvXbwUHhopiFy/Zlt3vxKBc0tfOrGCSmd1VcsMlW5Kd/WM7RHZnLif52nplp4ICzZ9QX82jmbtuFo33PkOUBZSLfCYy4tFT1fyrQUlT9mBdLG4v9ZHvEd91BRfezpN0QnSxundye4wYfIMjysSwZmcJ0yJaU4ZOsmm5f7+bs+Vd3h1qHwggMeWyhP/rU9i9muQxxt2LcUGgLDTsQYC5FDb+Dx5U8ntr+zsqH8Hz/To78emSk/KNlrCQEGxfH36nOk87ZkKFG1igKmzcIBAU2S7bfde9j0w3qWzJ9jOLvzEaAJIPBXgIcozuOVaURZ4PJfOmbIhb9X0l+yHxfYm0E+d637XWWwuV182iRL2tcIqkxqanX3N94WSlg3rEH3FXUdxfraDZK732lRXETjznPnFy+6UUqoGL1kK7TFBlNRwFNa0A4hqRMelvt6LuzT+b3dbXn303TlQkXmcOLhWakQaXGJv4p2S8x6twWwre66ReYIv70NTdSq7VkYIZ8UMSRPN3iKEO0fi2pLHXlIc5bHb7DtbROLnaMonXZ9ytfRNBrLp6lRYEC7pozduytw63JKTL32TTzi2ROYW+X3dLdKBxq1v4lGI0P5VCnHXXwtoY0RuxeTLTpwb/njxj/5kOhcO5af6jqQO3tDO+O0bl12EvpKTQxDfNQyrnJh0FjFCr/1RQZVPKX65ncsOdDJTlp1BlhCJIuivKGobJzSxij3jiScAnMdrHd5VLAn/uenpFaSgU7mBrK6DLdHuM05rlhDi5VkPh5a+hsapVIKE82YcUW/SYgZnfg/1jszLm6FiBU74ppOU25A5EpSzEBlYjzqfRa1RfSNEEkCvnwKC0pIytnuqtUnYqm90+3nFJiI3jdIX8EEzFiBli94c4u4SSjJho4jG8G6U4zMZXik9cXPe9B81oAacZrtBS/Nyg1zK1z1ta4nYNkk7AMAUttXB0AXQc2urFzKujCenUMwExVIVKVT+Jo8VjBP7Fq60KG+JPlwJmvCWMD8hlu0tTZHGhWGJdsnSJk2Oh/9U39CYxrrocDG7K/s3vfsS6EoqOvhatid+tBdIu6KQBwh48xEoXliVZ3NEpjkyQ+N41Gx0ALxPKn2/pQeC3xsjY03u7IuWqg4l/uYR8FY6uIKNjOUk3/Vk+xHVS31RNFfWkOK+hkRUVwyKaSaMBAEPdRxO037BIUFN0LXctrPICTq8/iWj5ZXlUjIs2dLxz7Clfi2MDMr4/x//KQ9Ivhg/+6G564NQtvcpS9BbeGQ12ddRUjSH7gOodXjm+JoGp5FJi1YVtfupmQJPpmaQGi2Hg3TUI9X47jxY/eOKHuPdjWjrsxG3zwoGvcjhhdldxoym6MRQDiYY+ZduJk7lCZNvyPRsBu/iFjHArCi3tTgmegogZpmeJc3rQaTVWKqmx4oA1m110DoDSA4CPXY4KQ6eBXbXUtUXDL8UJYDd1WfgSBdWCwUznaY" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['ctl00'];
+if (!theForm) {
+    theForm = document.ctl00;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZKDmiNSlvFpGyGoRQqZe3V7-Giny3ZlTszSzDJ_SxquSGPmOqGaUnRsSYFwmlsyA3g2&amp;t=638674377851189021" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=nv7asgRUU0tRmHNR2D6t1M04InGSf2Lu3CCOtjMJB1SCWPzY-Tg1zkanC2T2gL_MuZ-3Su-Bcr6-oGUAxAMZLblY0WqHaF1-xJlWfK1DDY8-WXBE2fZ6mHMpy-kzEAZZyxem1mjVQ3QprGLSPQf6zQ2&amp;t=125d5fef" type="text/javascript"></script><link class='Telerik_stylesheet' type='text/css' rel='stylesheet' href='/WebResource.axd?d=Nhf6TpUj19KZ9rhEj2xtdcCVw0x9xS3eCjpjy7I3wdeo4wl-u7TmPDDo9utAlo6lLjA2CTbLOpy3yUWDJPO_0E__RZ9f_EN78LCPaNTPgBU5jNCzCOWeE1Udn5Vp6sVP0&amp;t=638518211815086666' /><link class='Telerik_stylesheet' type='text/css' rel='stylesheet' href='/WebResource.axd?d=tAs1PzD6X_1ylbCNgK9s1RYFO6DLR2X9v3ytDhz3LXfF1Pte1pbY9ucYFYYBL9g1v00EePcUltQ3YrwxI72JkXyfeTiMd0jeV2TvcsXrCwhSFjCNmm8iBAgUe3oMf-q5AaGuoS_6v6CYtkHnb9AHhg2&amp;t=638518211812365773' /><link class='Telerik_stylesheet' type='text/css' rel='stylesheet' href='/WebResource.axd?d=JObenGPrApriO3OrROuzzpUZmeWlOK_mebl5XxCEiICxVO75J9oVuUHcRo6-VnuAKnf5Zh6IcUfyLZ1yeu1qVV2kThDc0bKkE38Cu9mBaGDwfr_yyCX7iHVDyaY06GQA0&amp;t=638518211815086666' /><link class='Telerik_stylesheet' type='text/css' rel='stylesheet' href='/WebResource.axd?d=jxmtQaBhSrPod5G6e1VHawCA19XIwGlqOaqh2431WCl0z7Q0lg508jlXBcvXxCbpCM7HunFqmxnJD0djFYAWyQFgjK-CPHPZKiB2cxKbq2B1_ZZpAo0cf72JuNkhaaDvnaxkG7RytC20dENDpO-L0A2&amp;t=638518211812365773' />
+<script src="../Scripts/WebForms/MsAjax/MicrosoftAjax.js" type="text/javascript"></script>
+<script src="../Scripts/WebForms/MsAjax/MicrosoftAjaxWebForms.js" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=TDVjdgRbdvNAY3tnbizUcDhiwjlv_T2z0wf6RIyB0it1klxdUklSE2uNZHNIIG4pgxl1UWajY9gBvuoR3Qk752odsBN8H8rb6MGzQjCiV8bbO_jFWO7M8vaUAXtNA7TN0&amp;t=b435830" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=jsREEuQJotslNUdHnktdpiGWcFaxie1m0vzL_SQNZZQMYRHc_evcEOYHlCKpa9Llf2AP8EOJtrLAIC1t0yvjmxdZnzFJF9OpAH5L8VOF1h18X5df3gaviUB7CKtCIc2gDODzlLCpVlzkfqmEHdtvZA2&amp;t=b435830" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=mbGZm65DzNC0tMTq0ElbcUXMVr3PiQRTp7zazd12dif1ywgb6bdpm8MRsuoa1P4MdHtjiqfk9WY__0csqJJhEX3IJJAMjRW_06Ala0oRnsSl7-L4bKQ_UvVR3v-VZ4rc8PAuUJo_6tffY3zi5Izhvg2&amp;t=b435830" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=cmIcXiVJ__exjjpjrN730rPsFAc6ImEkYhHNtpFO3CagFdG-EZHRZY2-2G97-mFBTIZUX4MhykuznW-mc64Ad51SI4bc3K7TFs1YIRKIo8bBR4WosnWVN4OtXsA7Emv2-15NEL94h3EklwU_ruDcZA2&amp;t=b435830" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=7yV_cI2fM3ViAoeY3WC6dodVO9TISYUOJbC2r04PJyNqKFTcpE75ctrhcF1Gs930iwY_t3zwxmdjr1F5HJ6Tw7s4Ux6WkEPu-c1ONvCDXPX25RegljbZrirBqmsBrh6zLKakEjdjdb5IUDVibLrS_g2&amp;t=b435830" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="14284942" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="JEbTs1yCVBCO6qMuZFjgDZSlfwRL9n/LD4LgC7+NKlpwTmrCUdG8nn6QHl0ASRHIFnwDUBE/iZeFrhqSy8L7GbieMfQ9IW8iz90v6TW065yHg1cqTXuA59IDm6WyqSSu3iW8LrHHg+gCz4E3bMgG9nRLtAXQj1GvTD+Hs0poJEZ+tNDJENAcujZE5FSYO6WSwtWpTKsX0Gw2qlR1phkT3ybhuJcJsE4f5mJChAAuzKf4v4IfP5zT1UN3Gx2UBUkVMNWlcA+HkB39QkQhZaeOBKWNPoAzPEIOR4JXTgIejCR8XmXjaK3nf72yVq2sGr29YJ5grFXJg7tuML/RoMzRwNsgp7f1qJtYEGjEIlVEPYRcvXmYymS0nLBoDIAZu72i77RndFZRWrXf6LOHX78RdEpx9Lmo6VEzRIOKtFSWYmkKRp6HV+p/7KzwVEHyFJAAtO6piEsQYkTD18SDPn71RqKRuiOF2jDXY90O8CeTqA2mzTOh28W0iSANI60ZnxnQymPl5ELPnZfCZJIvfjVl6qQXYMWIAFNFZgAEm5J+WTv5w13P9AJ03pEnoqjVczCYdrwArfG+Ge3RqrBFn4SiXYH6oiCB9VSpRcfPPGAWZOeNNaahHCGTx8Cbtq6WuqmIHOG1yg6QiwG6TTfwJExQYA==" />
+</div>
+
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$scrManager1', 'ctl00', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+
+        <!-- BEGIN .app-wrap -->
+        <div class="app-wrap">
+            <!-- BEGIN .app-heading -->
+            <header class="app-header">
+                <div class="container-fluid">
+                    <div class="row gutters">
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-3 col-4">
+                            <a class="mini-nav-btn" href="#" id="app-side-mini-toggler">
+                                <i class="icon-menu5"></i>
+                            </a>
+                            <a href="#app-side" data-toggle="onoffcanvas" class="onoffcanvas-toggler" aria-expanded="true">
+                                <i class="icon-chevron-thin-left"></i>
+                            </a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-4">
+                            <a href="https://www.amberit.com.bd/" class="login-logo">
+                                <img src="img/SelfCare_logo.png" alt="Amber IT Ltd." />
+                            </a>
+                        </div>
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-3 col-4">
+                            <ul class="header-actions">
+
+                                <li class="dropdown">
+                                    <a href="#" id="userSettings" class="user-settings" data-toggle="dropdown" aria-haspopup="true">
+                                        <img class="avatar" src="/img/user.png" alt="User Thumb" />
+
+                                        <span id="lblUser" class="user-name">MD MOLLA OMAR</span>
+                                        <i class="icon-chevron-small-down"></i>
+                                    </a>
+                                    <div class="dropdown-menu lg dropdown-menu-right" aria-labelledby="userSettings">
+                                        <ul class="user-settings-list">
+                                            <li>
+                                                <a href="/Sales/CustomerDetail.aspx">
+                                                    <div class="icon">
+                                                        <i class="icon-account_circle"></i>
+                                                    </div>
+                                                    <p>Profile</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/Settings/PasswordChange.aspx">
+                                                    <div class="icon red">
+                                                        <i class="icon-unlocked"></i>
+                                                    </div>
+                                                    <p>Change Password</p>
+                                                </a>
+                                            </li>
+                                            
+                                        </ul>
+                                        <div class="logout-btn">
+                                            <a href="/LogOut.aspx" class="btn btn-primary">Logout</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- END: .app-heading -->
+            <!-- BEGIN .app-container -->
+            <div class="app-container">
+                <!-- BEGIN .app-side -->
+                <aside class="app-side" id="app-side">
+                    <!-- BEGIN .side-content -->
+                    <div class="side-content " style="font-weight: 600; color: #000000">
+
+                        <nav class="side-nav">
+                            <!-- BEGIN: side-nav-content -->
+                            <ul class="unifyMenu" id="unifyMenu">
+
+
+                                
+
+                                <li><a href="/Dashboard.aspx" class="has-arrow"><span class="has-icon"><i class="icon-laptop_windows"></i></span><span class="nav-title">DASHBOARD</span>  </a></li>
+
+                                <li></li>
+
+                                <li><a href="/Sales/CustomerDetail.aspx" class="has-arrow"><span class="has-icon"><i class="icon-account_box"></i></span><span class="nav-title">PROFILE</span>  </a></li>
+
+                                <li><a href="/UI/Client/Payment.aspx" class="has-arrow"><span class="has-icon"><i class="icon-clipboard"></i></span><span class="nav-title">BILLS PAY</span>  </a></li>
+
+
+                                
+
+
+                                <li><a href="/Sales/RequestStatus.aspx" class="has-arrow"><span class="has-icon"><i class="icon-accessibility2"></i></span><span class="nav-title">REQUEST STATUS</span>  </a>
+
+                                    
+                                </li>
+
+                                <li><a href="/ApplicationReports/CustomerLedger.aspx" class="has-arrow"><span class="has-icon"><i class="icon-document3"></i></span><span class="nav-title">LEDGER</span></a>
+                                </li>
+
+                                <li><a href="/Accounts/PaymentDetails.aspx" class="has-arrow"><span class="has-icon"><i class="icon-th-menu"></i></span><span class="nav-title">PAYMENT LIST</span></a>
+                                </li>
+
+                                <li><a href="/Accounts/InvoiceDetails.aspx" class="has-arrow"><span class="has-icon"><i class="icon-th-list"></i></span><span class="nav-title">INVOICE LIST</span></a>
+                                </li>
+
+                                <li></li>
+
+                                <li><a href="/Sales/ChangeRequest.aspx" id="lnkChangeRequest" class="has-arrow"><span class="has-icon"><i class="icon-account_box"></i></span><span class="nav-title">Change Request</span>  </a></li>
+
+                                
+
+                                
+                            </ul>
+                            <!-- END: side-nav-content -->
+                        </nav>
+                        <!-- END: .side-nav -->
+                    </div>
+                    <!-- END: .side-content -->
+                </aside>
+                <!-- END: .app-side -->
+
+                <!-- BEGIN .app-main -->
+                <div class="app-main">
+
+                    <!-- BEGIN .main-heading -->
+                    <header class="main-heading">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7">
+                                    <div class="page-icon">
+                                        <i class="icon-center_focus_strong"></i>
+                                    </div>
+                                    <div class="page-title" style="padding-top: 7PX; font-weight: 900">
+                                        <h5 style="font-weight: 900">
+                                            Customer Document Upload</h5>
+                                        
+                                    </div>
+                                </div>
+
+                                <div id="DivHyperLink" class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+
+                                    <a href="/Sales/CustomerDocument.aspx" target="_self" style="color: blue; font-weight: bold; text-decoration: underline; float: right">Upload your NID and Photo</a>
+                                </div>
+
+                                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
+
+                                    <div class="btn-group ">
+                                        
+
+                                        <a href="/UI/Client/Payment.aspx" class="btn btn-primary" style="right: 0%">BILLS PAY</a>
+                                    </div>
+
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </header>
+                    <!-- END: .main-heading -->
+
+                    <div class="main-content">
+                        
+    <style>
+        .RadInput_BlackMetroTouch .riTextBox, html body .RadInputMgr_BlackMetroTouch {
+            background: #e1e5f1 !important;
+            color: black !important;
+            border-color: #4e4e4e;
+            font-weight: 500 !important;
+        }
+    </style>
+    <script>
+        function Message(message) {
+            $("#msgModal").modal("show");
+            $('#msgModalBodyParagraph').html(message);
+        }
+        function ValidatorUpdateDisplay(val) {
+            if (typeof (val.display) == "string") {
+                if (val.display == "None") {
+                    return;
+                }
+                if (val.display == "Dynamic") {
+                    val.style.display = val.isvalid ? "none" : "inline";
+                    return;
+                }
+            }
+            val.style.visibility = val.isvalid ? "hidden" : "visible";
+            if (val.isvalid) {
+                document.getElementById(val.controltovalidate).style.border = '1px solid #e1e5f1';
+            }
+            else {
+                document.getElementById(val.controltovalidate).style.border = '1px solid red';
+            }
+        }
+
+
+        //(function ($) {
+        //    requestStart = function (target, arguments) {
+        //        if (arguments.get_eventTarget().indexOf('ButtonSend') > -1) {
+        //            arguments.set_enableAjax(false);
+        //        }
+        //    };
+        //})($telerik.$);
+
+        //function validate() {
+        //    var maxfilesize = 1024 * 1024,  // 1 Mb
+        //        filesize = el.files[0].size,
+        //        warningel = document.getElementById('lbError');
+
+        //    if (filesize > maxfilesize) {
+        //        warningel.innerHTML = "File too large: " + filesize + ". Maximum size: " + maxfilesize;
+        //        return false;
+        //    }
+        //    else {
+        //        warningel.innerHTML = '';
+        //        return true;
+        //    }
+        //}
+
+        //function uploadFile() {
+           
+        //    var fileInput = document.getElementById('PictureUpload');
+
+        //    var filesize = (fileInput.files[0].size);
+        //    if (filesize > 1000000) {
+        //        /* $('#fileMsg').html('Invalid File Size');*/
+        //        $("#msgModal").modal("show");
+        //        $('#msgModalBodyParagraph').html('file');
+        //    } else {
+               
+        //    }
+
+        //}
+
+
+
+    </script>
+
+
+    
+    <contenttemplate>
+
+        
+
+
+
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+            <div class="card">
+                
+                <div class="card-body">
+                    <h5 class="card-title" style="text-decoration: underline;">Customer Info</h5>
+                    <div class="form-row">
+                        <div class="col-sm-4">
+                            <div class="form-group row gutters">
+                                <label for="txtCustomerType" class="col-sm-4 col-form-label">Type</label>
+                                <div class="col-sm-8">
+                                    <input name="ctl00$MainContent$txtCustomerType" type="text" value="RETAIL" readonly="readonly" id="MainContent_txtCustomerType" class="form-control form-control-sm" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group row gutters">
+                                <label for="txtCustomerName" class="col-sm-4 col-form-label">Name</label>
+                                <div class="col-sm-8">
+                                    <input name="ctl00$MainContent$txtCustomerName" type="text" value="MD MOLLA OMAR" readonly="readonly" id="MainContent_txtCustomerName" class="form-control form-control-sm" />
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group row gutters">
+                                <label for="txtContactName" class="col-sm-4 col-form-label">Cont. Name</label>
+                                <div class="col-sm-8">
+                                    <input name="ctl00$MainContent$txtContactName" type="text" value="MD MOLLA OMAR" readonly="readonly" id="MainContent_txtContactName" class="form-control form-control-sm" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-sm-4">
+                            <div class="form-group row gutters">
+                                <label for="txtAddress" class="col-sm-4 col-form-label">Address</label>
+                                <div class="col-sm-8">
+                                    <input name="ctl00$MainContent$txtAddress" type="text" value="Behid Sohagi mashjid, Sayed Nagar, Notun bajar" readonly="readonly" id="MainContent_txtAddress" class="form-control form-control-sm" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group row gutters">
+                                <label for="txtMobile" class="col-sm-4 col-form-label">Mobile</label>
+                                <div class="col-sm-8">
+                                    <input name="ctl00$MainContent$txtMobile" type="text" value="8801799418897" readonly="readonly" id="MainContent_txtMobile" class="form-control form-control-sm" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group row gutters">
+                                <label for="txtEmail" class="col-sm-4 col-form-label">Email</label>
+                                <div class="col-sm-8">
+                                    <input name="ctl00$MainContent$txtEmail" type="text" value="mollaomar991@gmail.com" readonly="readonly" id="MainContent_txtEmail" class="form-control form-control-sm" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="col-sm-4">
+                            <div class="form-group row gutters">
+                                 <label class="col-sm-4 col-form-label">Occupation<span style="color: #cf3c3f">*</span></label>
+                                <div class="col-sm-8">
+                                    <select name="ctl00$MainContent$cmbOccupation" id="MainContent_cmbOccupation" EnableLoadOnDemand="true" Filter="Contains" HighlightTemplatedItems="True" DropDownWidth="250px" Skin="Metro" style="width:100%;">
+	<option value="">Please select</option>
+	<option selected="selected" value="1">Engineer</option>
+	<option value="2">Accountant</option>
+	<option value="3">Architect</option>
+	<option value="4">Govt. Service Holder</option>
+	<option value="5">CEO</option>
+	<option value="6">Executive</option>
+	<option value="7">Business owner</option>
+	<option value="8">Other</option>
+	<option value="9">Student</option>
+	<option value="10">Journalist</option>
+	<option value="11">Doctor</option>
+	<option value="12">Advocate</option>
+	<option value="13">Private Service Holder</option>
+
+</select>
+                                            <span id="MainContent_rfd_cmbOccupation" style="visibility:hidden;"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="col-sm-4">
+                            <div class="form-group row gutters">
+                                <label for="txtNID" class="col-sm-4 col-form-label">NID No.<span style="color: #cf3c3f">*</span></label>
+                                <div class="col-sm-8">
+                                    <input name="ctl00$MainContent$txtNID" type="text" value="6460483677" id="MainContent_txtNID" class="form-control form-control-sm" />
+                                    <span id="MainContent_RequiredFieldValidator1" style="visibility:hidden;"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="col-sm-4">
+                            <div class="form-group row gutters">
+                                <label for="PictureUpload" class="col-sm-4 col-form-label">Your Photo<span style="color: #cf3c3f">*</span></label>
+                                <div class="col-sm-8">
+                                      <input type="file" name="ctl00$MainContent$PictureUpload" id="MainContent_PictureUpload" style="width:200px;" />
+
+                                   
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-sm-4">
+                            <div class="form-group row gutters">
+                                <label for="NIDUpload" class="col-sm-4 col-form-label">Your NID<span style="color: #cf3c3f">*</span></label>
+                                <div class="col-sm-8">
+                                    <input type="file" name="ctl00$MainContent$NIDUpload" id="MainContent_NIDUpload" style="width:200px;" />
+
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-sm-4">
+                            <div class="form-group row gutters">
+                                <label for="OfficeIDUpload" class="col-sm-4 col-form-label">Your Office ID</label>
+                                <div class="col-sm-8">
+                                    <input type="file" name="ctl00$MainContent$OfficeIDUpload" id="MainContent_OfficeIDUpload" style="width:200px;" />
+                                    <br />
+                                    <span style="font-weight: bold; color: red; font-size: smaller">File size must be less than 1 MB</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="text-align: right">
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div id="MainContent_CustomerListBody" class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+            <div class="card">
+
+                <div class="card-body">
+
+                    <div class="row gutters">
+                        <div class="col-sm-12">
+
+                            <div id="ctl00_MainContent_grdShowList" class="RadGrid RadGrid_Metro" style="width:100%;">
+
+<!-- 2013.3.1015.45 --><table class="rgMasterTable rgClipCells" cellspacing="0" cellpadding="0" id="ctl00_MainContent_grdShowList_ctl00" style="width:100%;border-collapse:collapse;table-layout:fixed;empty-cells:show;">
+	<colgroup>
+		<col style="width:120px" />
+		<col  />
+		<col  />
+	</colgroup>
+<thead>
+		<tr>
+			<th scope="col" class="rgHeader" style="text-align:center;">&nbsp;</th><th scope="col" class="rgHeader" style="text-align:center;">Document</th><th scope="col" class="rgHeader" style="text-align:center;">Doc Path</th>
+		</tr>
+	</thead><tbody>
+	<tr class="rgRow" id="ctl00_MainContent_grdShowList_ctl00__0">
+		<td align="center">
+                                                <span id="ctl00_MainContent_grdShowList_ctl00_ctl04_btndownload" class="RadButton RadButton_Silk rbSkinnedButton" style="display:inline-block;font-style:normal;width:100px;"><input class="rbDecorated" type="submit" name="ctl00$MainContent$grdShowList$ctl00$ctl04$btndownload_input" id="ctl00_MainContent_grdShowList_ctl00_ctl04_btndownload_input" value="Download" style="width:100%;padding-left:0;padding-right:0;padding-left:4px;" /><input id="ctl00_MainContent_grdShowList_ctl00_ctl04_btndownload_ClientState" name="ctl00_MainContent_grdShowList_ctl00_ctl04_btndownload_ClientState" type="hidden" /></span>
+
+                                            </td><td align="center">NID</td><td align="center">NID_689706.pdf</td>
+	</tr><tr class="rgAltRow" id="ctl00_MainContent_grdShowList_ctl00__1">
+		<td align="center">
+                                                <span id="ctl00_MainContent_grdShowList_ctl00_ctl06_btndownload" class="RadButton RadButton_Silk rbSkinnedButton" style="display:inline-block;font-style:normal;width:100px;"><input class="rbDecorated" type="submit" name="ctl00$MainContent$grdShowList$ctl00$ctl06$btndownload_input" id="ctl00_MainContent_grdShowList_ctl00_ctl06_btndownload_input" value="Download" style="width:100%;padding-left:0;padding-right:0;padding-left:4px;" /><input id="ctl00_MainContent_grdShowList_ctl00_ctl06_btndownload_ClientState" name="ctl00_MainContent_grdShowList_ctl00_ctl06_btndownload_ClientState" type="hidden" /></span>
+
+                                            </td><td align="center">Photo</td><td align="center">photo_689706.jpeg</td>
+	</tr>
+	</tbody>
+
+</table><input id="ctl00_MainContent_grdShowList_ClientState" name="ctl00_MainContent_grdShowList_ClientState" type="hidden" />
+	</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+        <div class="container">
+            <div id="msgModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <p class="modal-title" style="font-weight: 600">System FeedBack</p>
+                        </div>
+                        <div class="modal-body">
+                            <p id="msgModalBodyParagraph" style="text-align: center"></p>
+                        </div>
+                        <div class="modal-footer">
+                            <input type="submit" name="ctl00$MainContent$btnClose" value="Close" id="MainContent_btnClose" class="btn btn-danger" data-dismiss="modal" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </contenttemplate>
+    
+
+                    </div>
+
+                </div>
+                <!-- END: .app-main -->
+
+            </div>
+            <!-- END: .app-container -->
+            <!-- BEGIN .main-footer -->
+
+
+
+            
+
+
+            <footer class="main-footer fixed-btm">
+                Copyright &copy 2024 <a href="https://www.amberit.com.bd/" target="_blank">Amber IT Limited</a>
+		
+            </footer>
+            <!-- END: .main-footer -->
+        </div>
+        <!-- END: .app-wrap -->
+
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("MainContent_rfd_cmbOccupation"), document.getElementById("MainContent_RequiredFieldValidator1"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var MainContent_rfd_cmbOccupation = document.all ? document.all["MainContent_rfd_cmbOccupation"] : document.getElementById("MainContent_rfd_cmbOccupation");
+MainContent_rfd_cmbOccupation.controltovalidate = "MainContent_cmbOccupation";
+MainContent_rfd_cmbOccupation.validationGroup = "Save";
+MainContent_rfd_cmbOccupation.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_rfd_cmbOccupation.initialvalue = "";
+var MainContent_RequiredFieldValidator1 = document.all ? document.all["MainContent_RequiredFieldValidator1"] : document.getElementById("MainContent_RequiredFieldValidator1");
+MainContent_RequiredFieldValidator1.controltovalidate = "MainContent_txtNID";
+MainContent_RequiredFieldValidator1.validationGroup = "Save";
+MainContent_RequiredFieldValidator1.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_RequiredFieldValidator1.initialvalue = "";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+javascript: Message('Could not find file 'C:\App\Application\SelfcareFile\CustomerImagephoto_689706.jpeg'.');
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        
+document.getElementById('MainContent_rfd_cmbOccupation').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('MainContent_rfd_cmbOccupation'));
+}
+
+document.getElementById('MainContent_RequiredFieldValidator1').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('MainContent_RequiredFieldValidator1'));
+}
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadButton, {"_accessKey":"","_postBackReference":"","clientStateFieldID":"ctl00_MainContent_grdShowList_ctl00_ctl04_btndownload_ClientState","iconData":{},"imageData":{},"text":"Download","toggleStatesData":[],"uniqueGroupName":"","uniqueID":"ctl00$MainContent$grdShowList$ctl00$ctl04$btndownload","width":"100px"}, null, null, $get("ctl00_MainContent_grdShowList_ctl00_ctl04_btndownload"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadButton, {"_accessKey":"","_postBackReference":"","clientStateFieldID":"ctl00_MainContent_grdShowList_ctl00_ctl06_btndownload_ClientState","iconData":{},"imageData":{},"text":"Download","toggleStatesData":[],"uniqueGroupName":"","uniqueID":"ctl00$MainContent$grdShowList$ctl00$ctl06$btndownload","width":"100px"}, null, null, $get("ctl00_MainContent_grdShowList_ctl00_ctl06_btndownload"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadGrid, {"ClientID":"ctl00_MainContent_grdShowList","ClientSettings":{"AllowAutoScrollOnDragDrop":true,"ShouldCreateRows":true,"DataBinding":{},"Selecting":{"CellSelectionMode":0},"Scrolling":{},"Resizing":{},"ClientMessages":{},"KeyboardNavigationSettings":{"AllowActiveRowCycle":false,"EnableKeyboardShortcuts":true,"FocusKey":89,"InitInsertKey":73,"RebindKey":82,"ExitEditInsertModeKey":27,"UpdateInsertItemKey":13,"DeleteActiveRow":127,"ExpandDetailTableKey":39,"CollapseDetailTableKey":37,"SaveChangesKey":85,"CancelChangesKey":67},"Animation":{},"Virtualization":{}},"Skin":"Metro","UniqueID":"ctl00$MainContent$grdShowList","_activeRowIndex":"","_controlToFocus":"","_currentPageIndex":0,"_defaultDateTimeFormat":"M/d/yyyy h:mm:ss tt","_editIndexes":"[]","_embeddedSkin":true,"_gridTableViewsData":"[{\"ClientID\":\"ctl00_MainContent_grdShowList_ctl00\",\"UniqueID\":\"ctl00$MainContent$grdShowList$ctl00\",\"PageSize\":10,\"PageCount\":1,\"EditMode\":\"EditForms\",\"AllowPaging\":false,\"CurrentPageIndex\":0,\"VirtualItemCount\":0,\"AllowMultiColumnSorting\":false,\"AllowNaturalSort\":true,\"AllowFilteringByColumn\":false,\"PageButtonCount\":10,\"HasDetailTables\":false,\"HasMultiHeaders\":false,\"CheckListWebServicePath\":\"\",\"GroupLoadMode\":\"Server\",\"PagerAlwaysVisible\":false,\"IsItemInserted\":false,\"clientDataKeyNames\":[],\"hasDetailItemTemplate\":false,\"_dataBindTemplates\":false,\"_selectedItemStyle\":\"\",\"_selectedItemStyleClass\":\"rgSelectedRow\",\"_columnsData\":[{\"UniqueName\":\"TemplateColumn\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridTemplateColumn\",\"ColumnGroupName\":\"Actions\",\"Editable\":false,\"DataTypeName\":\"System.String\",\"DataField\":\"\",\"Display\":true},{\"UniqueName\":\"DocName\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridBoundColumn\",\"ColumnGroupName\":\"\",\"Editable\":true,\"DataTypeName\":\"System.String\",\"DataField\":\"DocName\",\"Display\":true},{\"UniqueName\":\"DocPath\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridBoundColumn\",\"ColumnGroupName\":\"\",\"Editable\":true,\"DataTypeName\":\"System.String\",\"DataField\":\"DocPath\",\"Display\":true}]}]","_masterClientID":"ctl00_MainContent_grdShowList_ctl00","_shouldFocusOnPage":false,"allowMultiRowSelection":false,"clientStateFieldID":"ctl00_MainContent_grdShowList_ClientState","expandItems":{}}, null, null, $get("ctl00_MainContent_grdShowList"));
+});
+//]]>
+</script>
+</form>
+</body>
+</html>
